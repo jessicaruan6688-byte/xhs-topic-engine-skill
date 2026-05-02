@@ -16,13 +16,13 @@
 ### 方法1：GitHub 安装（推荐）
 
 ```bash
-claude install github:你的用户名/xhs-topic-engine-skill
+claude install github:jessicaruan6688-byte/xhs-topic-engine-skill
 ```
 
 ### 方法2：手动安装
 
 ```bash
-git clone https://github.com/你的用户名/xhs-topic-engine-skill.git
+git clone https://github.com/jessicaruan6688-byte/xhs-topic-engine-skill.git
 mkdir -p ~/.claude/skills/
 cp -r xhs-topic-engine-skill ~/.claude/skills/
 ```
