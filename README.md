@@ -50,15 +50,19 @@ git clone https://github.com/JoeanAmier/Spider_XHS.git ~/Spider_XHS
 cd ~/Spider_XHS
 pip install -r requirements.txt
 
-# 2. 配置 Cookie
-# 登录小红书网页版 → F12 → Application → Cookies → a1
+# 2. 先登录小红书网页版
+# 必须使用小红书小号，严禁主号
+# 打开 https://www.xiaohongshu.com 并完成登录
+
+# 3. 配置 Cookie
+# F12 → Application → Cookies → a1
 # 写入 ~/Spider_XHS/.env：COOKIE=a1=xxx;
 
-# 3. 将本 skill 的 safe_spider.py 复制到 Spider_XHS 目录
+# 4. 将本 skill 的 safe_spider.py 复制到 Spider_XHS 目录
 cp ~/.claude/skills/xhs-topic-engine-skill/scripts/safe_spider.py ~/Spider_XHS/
 ```
 
-> **安全警告**：Spider_XHS 必须使用小红书小号，严禁主号。safe_spider.py 已内置随机 3-6 秒延迟，每关键词后休息 10-15 秒。
+> **安全警告**：Spider_XHS 必须先登录小红书网页版，并且只能使用小红书小号，严禁主号。safe_spider.py 已内置随机 3-6 秒延迟，每关键词后休息 10-15 秒。
 
 ## 快速开始
 
@@ -76,6 +80,7 @@ python3 xhs_data_collector.py -k "毕业生求职" "面试技巧" "谈薪话术"
 
 **深度拆爆款（API逆向）：**
 ```bash
+# 先确认 Chrome 里登录的是小红书小号
 cd ~/Spider_XHS
 python3 safe_spider.py -k "毕业生求职" "面试技巧" -n 10 -c 20
 ```

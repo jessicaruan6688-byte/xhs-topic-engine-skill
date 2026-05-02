@@ -138,6 +138,10 @@ python3 xhs_data_collector.py -k "毕业生求职" "面试技巧" "谈薪话术"
 
 **适用场景**：每周深度拆解爆款，需要正文+评论
 
+执行前先确认两件事：
+- 已在浏览器登录小红书网页版
+- 登录的是小号，不是主号
+
 ```bash
 cd ~/Spider_XHS
 
@@ -146,7 +150,7 @@ python3 safe_spider.py -k "毕业生求职" -n 10 -c 20
 ```
 
 **能拿到**：标题、正文、点赞、收藏、评论数、评论内容、标签
-**风险**：需要小号，限速运行
+**风险**：必须用小号，且要限速运行
 
 ### 数据获取决策树
 
@@ -243,4 +247,4 @@ python3 safe_spider.py -k "毕业生求职" -n 10 -c 20
 - **人设关键词**：在 account-profile.md 中填写
 - **红线清单**：在 account-profile.md 中填写
 - **数据获取指南**：`references/data-collection-guide.md`（技术原理与安装步骤）
-- **Spider_XHS 配置**：`~/Spider_XHS/.env`（Cookie 配置）
+- **Spider_XHS 配置**：`~/Spider_XHS/.env`（Cookie 配置，先登录小红书网页版小号）
