@@ -1,0 +1,8 @@
+{
+  "name": "xhs-topic-engine",
+  "description": "小红书职场赛道选题 + 竞品研究 + 活人感内容生成。评论区挖热点、50博主拆解、3种内容框架、私域钩子注入。",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jessica"
+  }
+}
